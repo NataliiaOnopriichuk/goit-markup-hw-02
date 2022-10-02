@@ -10,17 +10,18 @@
 
 :root {
     --primary-text-color:#757575;
+    --secondary-gray-color:#F5F4FA;
     --title-text-color:#212121;
     --accent-color:#2196F3;
     --primary-white-color:#FFFFFF;
-    --background-white:#F5F5F5;
+    --secondary-white-color:rgba(255, 255, 255, 0.6);
     --background-grey:#2F303A;
     --hover-blue-color:#188CE8;
 }
 
 
 body {
-    background-color: var(--background-white);
+    background-color: var(--primary-white-color);
     color: var(--primary-text-color);
 
     font-family: roboto, sans-serif;
@@ -35,6 +36,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    text-decoration: none;
 }
 
 .logo:hover {
@@ -74,6 +76,7 @@ ul {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -100,6 +103,7 @@ ul {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .auth-nav .tel:hover,
@@ -123,6 +127,7 @@ ul {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    text-decoration: none;
 }
 
 .logo:hover {
@@ -144,10 +149,20 @@ ul {
 
 .adress-title {
     color: var(--primary-white-color);
+    text-decoration: none;
 }
 
 .adress-contact {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--secondary-white-color);
+    text-decoration: none;
+}
+
+.adress-contact:hover {
+    color: var(--accent-color);
+}
+
+.adress-contact:focus {
+    color: var(--accent-color);
 }
 
 /* index */
@@ -183,6 +198,7 @@ ul {
     background-color: var(--accent-color);
 
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 
 .button.primary:hover {
@@ -223,7 +239,7 @@ ul {
 
 /* команда */
 .team {
-    background-color: #F5F4FA;
+    background-color: var(--secondary-gray-color);
 }
 .worker .worker-title {
     color: var(--title-text-color);
@@ -245,14 +261,15 @@ ul {
 /* button */
 .button.secondary {
     color: var(--title-text-color);
-    background-color: #F5F4FA;
+    background-color: var(--secondary-gray-color);
 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
+    cursor: pointer;
 }
 
-.button.secondary:hover {
+.button.secondary:hover{
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
@@ -278,4 +295,8 @@ ul {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
+}
+
+.work-list .link {
+    text-decoration: none;
 }
