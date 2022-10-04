@@ -76,7 +76,7 @@ ul {
 
 /* контакти */
 .auth-nav .tel,
-.auth-nav .molino {
+.auth-nav .mailto {
     color: var(--primary-text-color);
 
     font-weight: 500;
@@ -90,8 +90,8 @@ ul {
     color: var(--accent-color);
 }
 
-.auth-nav .molino:hover,
-.auth-nav .molino:focus {
+.auth-nav .mailto:hover,
+.auth-nav .mailto:focus {
     color: var(--accent-color);
 }
 
@@ -108,12 +108,6 @@ ul {
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
-}
-
-.logo-word {
-    color: var(--accent-color);
-
-    font-family: Raleway, sans-serif;
 }
 
 .adress {
